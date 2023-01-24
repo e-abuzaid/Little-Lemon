@@ -1,38 +1,284 @@
-.App {
-  text-align: center;
+nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 20px 0 20px 70px;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: #495E57;
+  padding: 30px 70px 30px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-left {
+  display: flex;
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-right img {
+  width: 454px;
+  height: 356px;
+}
+
+nav img {
+  width: 230px;
+  height: 64px;
+}
+
+.main-navigation {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 70px 30px 70px;
+}
+
+.main-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.food-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.course-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-desc {
+  color: #000000;
+  margin: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 285px;
+  background-color: #EEEEEE;
+}
+
+article img {
+  width: 100%;
+  height: 133px;
+}
+
+.reviews {
+  padding: 30px 70px 30px 70px;
+  background-color: #495E57;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.review {
+  width: 20%;
+  background-color: #EEEEEE;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.App-link {
-  color: #61dafb;
+
+.review p {
+  color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.review img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.about {
+  padding: 30px 70px 30px 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-left {
+  width: 40%;
+}
+
+.about-left h1, .about-left h2, .about-left p {
+  color: #000000;
+}
+
+.about-right {
+  width: 40%;
+}
+
+.about-right img {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: #F4CE14;
+  margin-top: 40px;
+}
+
+footer h2 {
+  color: #000000;
+  font-size: 2rem;
+}
+
+footer a {
+  font-size: 20px;
+}
+
+form {
+  padding: 30px 70px 30px 70px;
+  background-color: #495E57;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form h1 {
+  margin-bottom: 50px;
+}
+
+form button {
+  align-self: center;
+}
+
+label {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  color: #F4CE14;
+}
+
+input, select, option {
+  width: 50%;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+input:focus, select:focus {
+  outline: none;
+}
+
+a {
+  font-family: 'Markazi Text', serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48.01px;
+  color: #495E57;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Markazi Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  color: #F4CE14;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Markazi Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  color: #495E57;
+}
+
+h4 {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin: 20px;
+}
+
+h5 {
+  margin: 0;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+p {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+button {
+  width: 180px;
+  height: 48px;
+  background: #F4CE14;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  border: none;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #495E57;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+ul {
+  list-style: none;
 }
