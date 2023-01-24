@@ -282,3 +282,53 @@ button {
 ul {
   list-style: none;
 }
+
+@media screen and (max-width: 800px) {
+  nav a {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-right {
+    margin-top: 30px;
+  }
+
+  .header-right img {
+    width: 100%;
+  }
+  .food-container {
+    flex-direction: column;
+  }
+  .food-container article {
+    margin-bottom: 30px;
+  }
+  .reviews {
+    width: 100%;
+  }
+  .reviews-container {
+    flex-direction: column;
+  }
+  .review {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .about {
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-right, .about-left {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 70px 30px 70px;
+  }
+
+  form {
+    width: 100%;
+  }
+} 
